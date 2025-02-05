@@ -1,0 +1,91 @@
+/* Section À propos */
+.about {
+    min-height: 100vh;
+    padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 1;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeInLeft 0.8s forwards;
+}
+
+.about-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.about-text span {
+    color: #D97706;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+.about-image {
+    flex: 1;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: fadeInRight 0.8s forwards;
+}
+
+.profile-picture {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-picture:hover {
+    transform: scale(1.05);
+}
+
+/* Animation supplémentaire pour la section À propos */
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive design pour la section À propos */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about-text, .about-image {
+        width: 100%;
+    }
+
+    .profile-picture {
+        margin-bottom: 30px;
+    }
+}

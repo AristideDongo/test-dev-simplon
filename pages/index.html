@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Interactif</title>
+    <!-- fichier pour le style -->
+    <link rel="stylesheet" href="/styles/acceuil.css" />
+    <link rel="stylesheet" href="/styles/about.css" />
+    <link rel="stylesheet" href="/styles/passion.css" />
+
+    <!-- fichier pour le scripts (Javascript) -->
+    <script src="/scripts/cursor.js" defer></script>
+    <script src="/scripts/main.js" defer></script>
+  </head>
+  <body>
+    <div class="cursor"></div>
+
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">Portfolio</div>
+        <div class="menu">
+          <a href="#home" class="menu-item">Accueil</a>
+          <a href="#about" class="menu-item">À propos de moi</a>
+          <a href="#passion" class="menu-item">Ma passion</a>
+        </div>
+      </nav>
+      <div class="menu-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <main>
+      <!-- Section Accueil -->
+      <section id="home" class="hero">
+        <h1 class="title">Explorez Mon Univers de Développement</h1>
+        <p class="subtitle" id="change-text">Passionné par la Création Web et l'Innovation</p>
+      </section>
+      
+
+      <!-- Section À propos de moi -->
+      <section id="about" class="about">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>À propos de moi</h2>
+            <p>
+              Je suis <span>ARISTIDE DONGO</span>, Développeur Junior JavaScript
+              spécialisé en Next.js et React. Actuellement, je me forme sur
+              NestJS afin de maîtriser le backend et développer des solutions
+              full-stack robustes.
+            </p>
+            <p>
+              Passionné par l’optimisation, la qualité du code et l’expérience
+              utilisateur, j’adopte une approche structurée et méthodique pour
+              créer des applications innovantes.
+            </p>
+            <p>
+                Compétences clés : JavaScript | TypeScript | Next.js | React | 
+                NestJS (en apprentissage) | Clean Architecture (débutant)
+              </p>              
+            <p>
+              Toujours prêt à relever de nouveaux défis et à apprendre pour
+              créer des produits impactants.
+            </p>
+            <p>
+              J’aspire également à devenir développeur mobile avec Flutter afin
+              de concevoir des applications performantes et intuitives.
+            </p>
+          </div>
+          <div class="about-image">
+            <img
+              src="/images/moi.jpg"
+              alt="Ma photo de profil"
+              class="profile-picture"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Passion -->
+      <section id="passion" class="passion">
+        <div class="passion-container">
+          <h2 class="passion-title">Ma Passion</h2>
+          <p class="passion-intro">
+            Je suis fasciné par le monde du numérique et son potentiel 
+            illimité pour créer des expériences interactives. Le développement web et mobile 
+            me permet d’allier créativité et innovation pour concevoir des applications 
+            utiles et intuitives. Mon objectif est de continuer à apprendre et à progresser afin 
+            de réaliser des projets.
+          </p>
+          <div class="passion-grid">
+            <div class="passion-card">
+              <div class="passion-icon">
+                <img src="/images/svg/innovation-creative-inspiration-svgrepo-com.svg" alt="">
+              </div>
+              <h3>Innovation</h3>
+              <p>
+                Passionné par la recherche de solutions créatives et innovantes
+                pour résoudre des problèmes complexes.
+              </p>
+            </div>
+            <div class="passion-card">
+              <div class="passion-icon">
+                <img src="/images/svg/creativity-1-svgrepo-com.svg" alt="">
+              </div>
+              <h3>Créativité</h3>
+              <p>
+                L'art de transformer des idées en expériences numériques uniques
+                et mémorables.
+              </p>
+            </div>
+            <div class="passion-card">
+              <div class="passion-icon">
+                <img src="/images/svg/web-design-svgrepo-com.svg" alt="">
+              </div>
+              <h3>Design</h3>
+              <p>
+                La fusion parfaite entre esthétique et fonctionnalité pour créer
+                des interfaces intuitives.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+/* Section Passion */
+.passion {
+    background: #0f0f0f;
+    min-height: 100vh;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+}
+
+.passion-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.passion-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #fff;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+.passion-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+}
+
+.passion-intro {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+.passion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 20px;
+}
+
+.passion-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 35px;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s forwards;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.passion-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.passion-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+}
+
+.passion-icon img {
+    width: 40px;
+    height: 40px;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.passion-card:hover .passion-icon img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.passion-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.passion-card p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+    font-size: 1.05em;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation delay pour les cartes */
+.passion-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.passion-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.passion-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .passion-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .passion {
+        padding: 60px 0;
+    }
+    
+    .passion-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .passion-card {
+        text-align: center;
+        padding: 30px;
+    }
+    
+    .passion-icon {
+        margin: 0 auto 20px auto;
+    }
+    
+    .passion-title {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .passion-title {
+        font-size: 1.8em;
+    }
+    
+    .passion-card {
+        padding: 25px;
+    }
+}
