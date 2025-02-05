@@ -43,3 +43,31 @@ function changeText() {
 }
 
 setInterval(changeText, 700)
+
+
+//Modal pour le message de bienvenue
+document.addEventListener('DOMContentLoaded', () => {
+    const welcomeBtn = document.querySelector('.welcome-btn');
+    const popup = document.querySelector('.welcome-popup');
+    const popupOverlay = document.querySelector('.welcome-popup-overlay');
+    const closePopupBtn = document.querySelector('.close-popup');
+
+    // Fonction pour ouvrir le popup
+    function openPopup() {
+        popup.style.display = 'block';
+        popupOverlay.style.display = 'block';
+    }
+
+    // Fonction pour fermer le popup
+    function closePopup() {
+        popup.style.display = 'none';
+        popupOverlay.style.display = 'none';
+    }
+
+    // Événement pour ouvrir le popup
+    welcomeBtn.addEventListener('click', openPopup);
+
+    // Événement pour fermer le popup
+    closePopupBtn.addEventListener('click', closePopup);
+    popupOverlay.addEventListener('click', closePopup);
+});

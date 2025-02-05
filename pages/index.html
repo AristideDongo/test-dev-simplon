@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/styles/acceuil.css" />
     <link rel="stylesheet" href="/styles/about.css" />
     <link rel="stylesheet" href="/styles/passion.css" />
+    <link rel="stylesheet" href="/styles/footer.css">
 
     <!-- fichier pour le scripts (Javascript) -->
     <script src="/scripts/cursor.js" defer></script>
@@ -37,7 +38,16 @@
       <section id="home" class="hero">
         <h1 class="title">Explorez Mon Univers de Développement</h1>
         <p class="subtitle" id="change-text">Passionné par la Création Web et l'Innovation</p>
+        <button class="welcome-btn">Bienvenue</button>
       </section>
+
+       <!-- Popup de bienvenue -->
+    <div class="welcome-popup-overlay"></div>
+    <div class="welcome-popup">
+        <button class="close-popup">&times;</button>
+        <h2>Bienvenue dans mon Univers !</h2>
+        <p>Salut ! Je suis Aristide Dongo, un développeur web passionné par la création d'expériences numériques innovantes. Ce portfolio est un aperçu de mon parcours, mes projets et mes passions. Prenez le temps de l'explorer, et plongez dans l'univers de mes réalisations !</p>        
+    </div>
       
 
       <!-- Section À propos de moi -->
@@ -125,5 +135,24 @@
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-thanks">
+      <h3>Merci de votre visite !</h3>
+    </div>
+    <div class="footer-social">
+      <a href="https://github.com/AristideDongo" target="_blank" class="social-link">
+        <img src="/images/svg/github-142-svgrepo-com.svg" alt="GitHub" class="social-icon">
+        <span>GitHub</span>
+      </a>
+      <a href="https://www.linkedin.com/in/aristide-dongo-074669296" target="_blank" class="social-link">
+        <img src="/images/svg/linkedin.svg" alt="LinkedIn" class="social-icon">
+        <span>LinkedIn</span>
+      </a>
+    </div>
+  </div>
+</footer>
   </body>
 </html>
